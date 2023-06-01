@@ -23,3 +23,6 @@ class1 ---> Interface <--- Dependency
 By using different Inversion of Control, you can change the data implementation from memory, file, database, etc. as needed. This is achieved by switching the interfaces instead of needing to recode classes and their dependencies, also known as decoupling.
 
 https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection
+
+DTO
+Data Transfer Object can be thought of as the contract between the client and our service. It is an object that carries data between processes. DTOs have no behavior beyond storage, retrieval and serialization of its own data. It contains no business logic.
