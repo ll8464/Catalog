@@ -4,7 +4,9 @@ using Catalog.Entities;
 
 namespace Catalog.Respositories
 {
-    public class InMemItemsRepository
+    
+
+    public class InMemItemsRepository : IItemsRepository
     {
         private readonly List<Item> items = new()
         {
@@ -20,7 +22,7 @@ namespace Catalog.Respositories
 
         public Item GetItem(Guid id)
         {
-            return items.Where( item => item.Id == id).SingleOrDefault();
+            return items.Where(item => item.Id == id).SingleOrDefault();
         }
     }
 }
